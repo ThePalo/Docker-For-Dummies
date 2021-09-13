@@ -110,3 +110,5 @@ services: #declaramos los servicios dentro del docker compose → automáticamen
 * Correr el docker-compose: `$ docker-compose up -d`
 * Eliminar contenedores docker-compose: `$ docker-compose down`
 
+ 
+ *Apuntes sacados del vídeo de Pelado Nerd, [DOCKER 2021 - De NOVATO a PRO! (CURSO COMPLETO)](https://youtu.be/CV_Uf3Dq-EU)*
