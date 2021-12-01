@@ -43,7 +43,7 @@ CMD ["node", "/app/src/index.js"]  # especificar el comando que vaya a correr al
 * Una vez creado el archivo Dockerfile, usar `$ docker build -t <image_name> <directorio_app>` para crear la imagen
 
 * Acceder a puertos: los puertos que escucha la app de docker no són los del host. Para hacer el mapping, se debe correr un docker con la imagen deseada y indicando el mapeo de puertos: `$ docker run -p 3000:3000 <image_name>`
-* Persistencia de datos: los datos generados en un contenedor se borran al reiniciar el contenedor. Para que haya persistencia: `$ docker run -v <fichero_docker>:<fichero_original> <image_name>`
+* Persistencia de datos: los datos generados en un contenedor se borran al reiniciar el contenedor. Para que haya persistencia: `$ docker run -v <local_path>:<docker_path> <image_name>`
   * Modificación bidireccional: cualquier cambio en una de los dos ficheros se ve en el otro.
   * Los ficheros también pueden ser directorios
 
